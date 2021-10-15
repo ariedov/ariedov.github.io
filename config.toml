@@ -1,0 +1,39 @@
+baseURL = 'https://www.dleibovych.com/'
+languageCode = 'en-us'
+title = 'David Leibovych'
+theme = "anatole"
+
+[params]
+title = 'David Leibovych'
+author = "David Leibovych"
+description = """
+My name is David
+I'm good at Android
+Love to tinker with things I'm not good at
+"""
+profilePicture = "images/small_avatar.jpg"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/ariedov/"
+
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "twitter"
+url = "https://www.twitter.com/ariedov/"
+
+[[params.socialIcons]]
+icon = "fab fa-medium"
+title = "medium"
+url = "https://www.medium.com/@ariedov/"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "linkedin"
+url = "https://www.linkedin.com/in/david-leibovych-11587428/"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:ariedov@gmail.com"
