@@ -12,6 +12,22 @@ I'm good at Android
 Love to tinker with things I'm not good at
 """
 profilePicture = "images/small_avatar.jpg"
+doNotLoadAnimations = true
+favicon = "favicons/"
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/posts/"
 
 [[params.socialIcons]]
 icon = "fab fa-github"
