@@ -36,7 +36,7 @@ Set it up in Rider settings
 
 ### NuGet
 
-At this point, almost everything is ready, but one crucial tool is required - NuGet to get your dependencies. The installation guild can be found here https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools#nugetexe-cli
+At this point, almost everything is ready, but one crucial tool is required - NuGet to get your dependencies. The installation guide can be found here https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools#nugetexe-cli
 
 In the `.nuget/NuGet.targets` file you will need to specify the nuget location by changing it to something like that
 
