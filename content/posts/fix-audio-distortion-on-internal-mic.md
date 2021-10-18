@@ -3,8 +3,8 @@ title: "Fix Audio Distortion on Internal Mic on Linux"
 date: 2021-10-16T15:41:46+03:00
 draft: false
 ---
-_I am writing this article since I had this issue on pretty much every linux installation_
-_This will only work if you're using pulseaudio for sound on Linux_
+_I am writing this article since I had this issue on pretty much every linux installation._
+_This will only work if you're using pulseaudio for sound on Linux._
 
 The general advice I found was editing every `analog-input*.conf` file in `/usr/share/pulseaudio/alsa-mixer/paths/`, however only changing `analog-input-internal-mic.conf` worked for me, since I only experienced the issue with the internal mic.
 
