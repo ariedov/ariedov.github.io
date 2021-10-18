@@ -25,13 +25,13 @@ Love to tinker with things I'm not good at
 <script type=text/javascript src=/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus=" crossorigin=anonymous></script>
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Fix Audio Distortion on Internal Mic on Linux">
-<meta name=twitter:description content="I am writing this article since I had this issue on pretty much every linux installation This will only work if you&rsquo;re using pulseaudio for sound on Linux
+<meta name=twitter:description content="I am writing this article since I had this issue on pretty much every linux installation. This will only work if you&rsquo;re using pulseaudio for sound on Linux.
 The general advice I found was editing every analog-input*.conf file in /usr/share/pulseaudio/alsa-mixer/paths/, however only changing analog-input-internal-mic.conf worked for me, since I only experienced the issue with the internal mic.
 In the analog-input-internal-mic.conf change:
  Under [Element Capture] set volume to zero Under [Element Internal Mic Boost] set volume to zero.">
 <script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"Fix Audio Distortion on Internal Mic on Linux","headline":"Fix Audio Distortion on Internal Mic on Linux","alternativeHeadline":"","description":"
       
-        I am writing this article since I had this issue on pretty much every linux installation This will only work if you\u0026rsquo;re using pulseaudio for sound on Linux\nThe general advice I found was editing every analog-input*.conf file in \/usr\/share\/pulseaudio\/alsa-mixer\/paths\/, however only changing analog-input-internal-mic.conf worked for me, since I only experienced the issue with the internal mic.\nIn the analog-input-internal-mic.conf change:\n Under [Element Capture] set volume to zero Under [Element Internal Mic Boost] set volume to zero.
+        I am writing this article since I had this issue on pretty much every linux installation. This will only work if you\u0026rsquo;re using pulseaudio for sound on Linux.\nThe general advice I found was editing every analog-input*.conf file in \/usr\/share\/pulseaudio\/alsa-mixer\/paths\/, however only changing analog-input-internal-mic.conf worked for me, since I only experienced the issue with the internal mic.\nIn the analog-input-internal-mic.conf change:\n Under [Element Capture] set volume to zero Under [Element Internal Mic Boost] set volume to zero.
 
 
       
@@ -127,8 +127,8 @@ David Leibovych
 <div class=post-content>
 <div class=post-title>
 <h1>Fix Audio Distortion on Internal Mic on Linux</h1>
-</div><p><em>I am writing this article since I had this issue on pretty much every linux installation</em>
-<em>This will only work if you&rsquo;re using pulseaudio for sound on Linux</em></p>
+</div><p><em>I am writing this article since I had this issue on pretty much every linux installation.</em>
+<em>This will only work if you&rsquo;re using pulseaudio for sound on Linux.</em></p>
 <p>The general advice I found was editing every <code>analog-input*.conf</code> file in <code>/usr/share/pulseaudio/alsa-mixer/paths/</code>, however only changing <code>analog-input-internal-mic.conf</code> worked for me, since I only experienced the issue with the internal mic.</p>
 <p>In the <code>analog-input-internal-mic.conf</code> change:</p>
 <ul>

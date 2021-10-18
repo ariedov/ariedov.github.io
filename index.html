@@ -128,7 +128,7 @@ David Leibovych
 <div class=post-content>
 <div class=p_part>
 <p>
-I am writing this article since I had this issue on pretty much every linux installation This will only work if you&rsquo;re using pulseaudio for sound on Linux
+I am writing this article since I had this issue on pretty much every linux installation. This will only work if you&rsquo;re using pulseaudio for sound on Linux.
 The general advice I found was editing every analog-input*.conf file in /usr/share/pulseaudio/alsa-mixer/paths/, however only changing analog-input-internal-mic.conf worked for me, since I only experienced the issue with the internal mic.
 In the analog-input-internal-mic.conf change:
 Under [Element Capture] set volume to zero Under [Element Internal Mic Boost] set volume to zero.
