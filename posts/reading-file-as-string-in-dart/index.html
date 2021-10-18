@@ -2,7 +2,7 @@
 <title>
 David Leibovych
 |
-David Leibovych
+Reading File as String in Dart
 </title>
 <meta charset=utf-8><meta name=generator content="Hugo 0.88.1"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name=description content="
@@ -20,17 +20,22 @@ Love to tinker with things I'm not good at
 <link rel=apple-touch-icon sizes=180x180 href=/favicons/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicons/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicons/favicon-16x16.png>
-<link rel=canonical href=/>
-<link rel=alternate type=application/rss+xml href=/index.xml title="David Leibovych">
+<link rel=canonical href=/posts/reading-file-as-string-in-dart/>
 <script type=text/javascript src=/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w=" crossorigin=anonymous></script>
 <script type=text/javascript src=/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus=" crossorigin=anonymous></script>
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="David Leibovych">
-<meta name=twitter:description content="My name is David
-I'm good at Android
-Love to tinker with things I'm not good at
-">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"David Leibovych","url":"https:\/\/www.dleibovych.com\/","description":"My name is David\nI\u0027m good at Android\nLove to tinker with things I\u0027m not good at\n","thumbnailUrl":"https:\/\/www.dleibovych.com\/","license":""}</script>
+<meta name=twitter:title content="Reading File as String in Dart">
+<meta name=twitter:description content="Reading a file in Dart is very straigthforward, so for this article not to be 4 lines long I have to write something down. I, personally, needed this for having a json in Unit tests.
+final file = File(&#34;path/to/file&#34;); final fileContents = await file.readAsString(); Nice reading files in Dart to you =)">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"Reading File as String in Dart","headline":"Reading File as String in Dart","alternativeHeadline":"","description":"
+      
+        Reading a file in Dart is very straigthforward, so for this article not to be 4 lines long I have to write something down. I, personally, needed this for having a json in Unit tests.\nfinal file = File(\u0026#34;path\/to\/file\u0026#34;); final fileContents = await file.readAsString(); Nice reading files in Dart to you =)
+
+
+      
+
+
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.dleibovych.com\/posts\/reading-file-as-string-in-dart\/"},"author":{"@type":"Person","name":"David Leibovych"},"creator":{"@type":"Person","name":"David Leibovych"},"accountablePerson":{"@type":"Person","name":"David Leibovych"},"copyrightHolder":{"@type":"Person","name":"David Leibovych"},"copyrightYear":"2021","dateCreated":"2021-10-18T17:07:53.00Z","datePublished":"2021-10-18T17:07:53.00Z","dateModified":"2021-10-18T17:07:53.00Z","publisher":{"@type":"Organization","name":"David Leibovych","url":"https://www.dleibovych.com/","logo":{"@type":"ImageObject","url":"https:\/\/www.dleibovych.com\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/www.dleibovych.com\/posts\/reading-file-as-string-in-dart\/","wordCount":"52","genre":[],"keywords":[]}</script>
 </head>
 <body>
 <header><div class="page-top
@@ -44,7 +49,7 @@ Love to tinker with things I'm not good at
 <ul class=nav__list id=navMenu>
 <div class=nav__links>
 <li>
-<a class=current href=/ title>Home</a>
+<a href=/ title>Home</a>
 </li>
 <li>
 <a href=/posts/ title>Posts</a>
@@ -117,86 +122,19 @@ David Leibovych
 <div class=content>
 <div class="post
 .">
-<div class="post-title post-content">
-</div>
-</div>
-<div class="post
-.">
-<div class=post-title>
-<h3><a href=/posts/reading-file-as-string-in-dart/>Reading File as String in Dart</a></h3>
-</div>
 <div class=post-content>
-<div class=p_part>
-<p>
-Reading a file in Dart is very straigthforward, so for this article not to be 4 lines long I have to write something down. I, personally, needed this for having a json in Unit tests.
-final file = File("path/to/file"); final fileContents = await file.readAsString(); Nice reading files in Dart to you =)
-</p>
-</div>
+<div class=post-title>
+<h1>Reading File as String in Dart</h1>
+</div><p>Reading a file in Dart is very straigthforward, so for this article not to be 4 lines long I have to write something down.
+I, personally, needed this for having a json in Unit tests.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-dart data-lang=dart><span style=color:#66d9ef>final</span> file <span style=color:#f92672>=</span> File(<span style=color:#e6db74>&#34;path/to/file&#34;</span>);
+<span style=color:#66d9ef>final</span> fileContents <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> file.readAsString();
+</code></pre></div><p>Nice reading files in Dart to you =)</p>
 </div>
 <div class=post-footer>
-<div class=meta>
 <div class=info>
-<em class="fas fa-calendar-day"></em>
-<span class=date>
-Mon, Oct 18, 2021
-</span>
 </div>
 </div>
-</div>
-</div>
-<div class="post
-.">
-<div class=post-title>
-<h3><a href=/posts/fix-audio-distortion-on-internal-mic/>Fix Audio Distortion on Internal Mic on Linux</a></h3>
-</div>
-<div class=post-content>
-<div class=p_part>
-<p>
-I am writing this article since I had this issue on pretty much every linux installation. This will only work if you&rsquo;re using pulseaudio for sound on Linux.
-The general advice I found was editing every analog-input*.conf file in /usr/share/pulseaudio/alsa-mixer/paths/, however only changing analog-input-internal-mic.conf worked for me, since I only experienced the issue with the internal mic.
-In the analog-input-internal-mic.conf change:
-Under [Element Capture] set volume to zero Under [Element Internal Mic Boost] set volume to zero.
-</p>
-</div>
-</div>
-<div class=post-footer>
-<div class=meta>
-<div class=info>
-<em class="fas fa-calendar-day"></em>
-<span class=date>
-Sat, Oct 16, 2021
-</span>
-</div>
-</div>
-</div>
-</div>
-<div class="post
-.">
-<div class=post-title>
-<h3><a href=/posts/xamarin-android-on-linux/>Xamarin.Android on Linux</a></h3>
-</div>
-<div class=post-content>
-<div class=p_part>
-<p>
-The IDE First things first - Jetbrains. Rider is required, there is no other tool available for writing Xamarin code on Linux. Grab it here https://www.jetbrains.com/rider/
-Make sure to install Xamarin.Android support plugin. The installation guide will also have that option available.
-C# on Linux Next is mono - the layer which allows provides necessary tools to build C# code on Linux and Mac. https://www.mono-project.com/
-Now the tricky stuff, installing Xamarin.
-</p>
-</div>
-</div>
-<div class=post-footer>
-<div class=meta>
-<div class=info>
-<em class="fas fa-calendar-day"></em>
-<span class=date>
-Fri, Oct 15, 2021
-</span>
-</div>
-</div>
-</div>
-</div>
-<div class=pagination>
 </div>
 </div>
 </div>
