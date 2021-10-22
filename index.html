@@ -123,6 +123,32 @@ David Leibovych
 <div class="post
 .">
 <div class=post-title>
+<h3><a href=/posts/casting-lists-and-maps-in-dart/>Casting Lists and Maps in Dart</a></h3>
+</div>
+<div class=post-content>
+<div class=p_part>
+<p>
+Another short Dart tip today, and another one that occurred while testing some dart code, but most useful for me when parsing JSON.
+Lists For List&lt;dynamic> I got from a JSON Map, when trying to save them as List&lt;String> the errors like:
+type 'List&lt;dynamic>' is not a subtype of type 'List&lt;String>' The fix is as simple as using something like that:
+List&lt;String> correctList = &lt;dynamic>[].cast&lt;String>(); Maps And for JSON maps that I needed to be parsed as Map&lt;String, String>:
+</p>
+</div>
+</div>
+<div class=post-footer>
+<div class=meta>
+<div class=info>
+<em class="fas fa-calendar-day"></em>
+<span class=date>
+Fri, Oct 22, 2021
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="post
+.">
+<div class=post-title>
 <h3><a href=/posts/reading-file-as-string-in-dart/>Reading File as String in Dart</a></h3>
 </div>
 <div class=post-content>
