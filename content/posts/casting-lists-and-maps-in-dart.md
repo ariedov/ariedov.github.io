@@ -1,7 +1,7 @@
 ---
 title: "Casting Lists and Maps in Dart"
 date: 2021-10-22T19:29:40+03:00
-draft: true
+draft: false
 ---
 
 Another short Dart tip today, and another one that occurred while testing some dart code, but most useful for me when parsing JSON.
