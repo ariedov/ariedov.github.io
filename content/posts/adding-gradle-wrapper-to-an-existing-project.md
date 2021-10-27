@@ -1,7 +1,7 @@
 ---
 title: "Adding Gradle Wrapper to an Existing Project"
 date: 2021-10-23T12:54:14+03:00
-draft: true
+draft: false
 ---
 
 Another little one today, I specifically tried to build the vlc-android app myself to fix a song title issue I have.
