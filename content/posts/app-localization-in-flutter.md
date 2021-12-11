@@ -1,5 +1,5 @@
 ---
-title: "App Localization on Flutter"
+title: "App Localization in Flutter"
 date: 2021-11-28T21:03:20+02:00
 draft: false
 ---
