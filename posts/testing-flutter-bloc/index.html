@@ -2,7 +2,7 @@
 <title>
 David Leibovych
 |
-Fix Audio Distortion on Internal Mic on Linux
+Testing Flutter Bloc
 </title>
 <meta charset=utf-8><meta name=generator content="Hugo 0.90.1"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name=description content="
@@ -20,24 +20,23 @@ Love to tinker with things I'm not good at
 <link rel=apple-touch-icon sizes=180x180 href=/favicons/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicons/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicons/favicon-16x16.png>
-<link rel=canonical href=/posts/fix-audio-distortion-on-internal-mic/>
+<link rel=canonical href=/posts/testing-flutter-bloc/>
 <script type=text/javascript src=/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w=" crossorigin=anonymous></script>
 <script type=text/javascript src=/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus=" crossorigin=anonymous></script>
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Fix Audio Distortion on Internal Mic on Linux">
-<meta name=twitter:description content="I am writing this article since I had this issue on pretty much every linux installation. This will only work if you&rsquo;re using pulseaudio for sound on Linux.
-The general advice I found was editing every analog-input*.conf file in /usr/share/pulseaudio/alsa-mixer/paths/, however only changing analog-input-internal-mic.conf worked for me, since I only experienced the issue with the internal mic.
-In the analog-input-internal-mic.conf change:
- Under [Element Capture] set volume to zero Under [Element Internal Mic Boost] set volume to zero.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"Fix Audio Distortion on Internal Mic on Linux","headline":"Fix Audio Distortion on Internal Mic on Linux","alternativeHeadline":"","description":"
+<meta name=twitter:title content="Testing Flutter Bloc">
+<meta name=twitter:description content="I try to indroduce tests even to my side projects, just because tests fundamentally save time and make you think more about the project architecture.
+So of course while using the famous flutter_bloc library for my projects I wanted a nice way to test it. I was very pleasantly surprised when I discovered that the library provides a very nice and elegant way to test the bloc via bloc_test.
+First of all, add it to your dev dependencies:">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"Testing Flutter Bloc","headline":"Testing Flutter Bloc","alternativeHeadline":"","description":"
       
-        I am writing this article since I had this issue on pretty much every linux installation. This will only work if you\u0026rsquo;re using pulseaudio for sound on Linux.\nThe general advice I found was editing every analog-input*.conf file in \/usr\/share\/pulseaudio\/alsa-mixer\/paths\/, however only changing analog-input-internal-mic.conf worked for me, since I only experienced the issue with the internal mic.\nIn the analog-input-internal-mic.conf change:\n Under [Element Capture] set volume to zero Under [Element Internal Mic Boost] set volume to zero.
+        I try to indroduce tests even to my side projects, just because tests fundamentally save time and make you think more about the project architecture.\nSo of course while using the famous flutter_bloc library for my projects I wanted a nice way to test it. I was very pleasantly surprised when I discovered that the library provides a very nice and elegant way to test the bloc via bloc_test.\nFirst of all, add it to your dev dependencies:
 
 
       
 
 
-    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.dleibovych.com\/posts\/fix-audio-distortion-on-internal-mic\/"},"author":{"@type":"Person","name":"David Leibovych"},"creator":{"@type":"Person","name":"David Leibovych"},"accountablePerson":{"@type":"Person","name":"David Leibovych"},"copyrightHolder":{"@type":"Person","name":"David Leibovych"},"copyrightYear":"2021","dateCreated":"2021-10-16T15:41:46.00Z","datePublished":"2021-10-16T15:41:46.00Z","dateModified":"2021-10-16T15:41:46.00Z","publisher":{"@type":"Organization","name":"David Leibovych","url":"https://www.dleibovych.com/","logo":{"@type":"ImageObject","url":"https:\/\/www.dleibovych.com\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/www.dleibovych.com\/posts\/fix-audio-distortion-on-internal-mic\/","wordCount":"111","genre":[],"keywords":[]}</script>
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.dleibovych.com\/posts\/testing-flutter-bloc\/"},"author":{"@type":"Person","name":"David Leibovych"},"creator":{"@type":"Person","name":"David Leibovych"},"accountablePerson":{"@type":"Person","name":"David Leibovych"},"copyrightHolder":{"@type":"Person","name":"David Leibovych"},"copyrightYear":"2021","dateCreated":"2021-12-11T23:02:30.00Z","datePublished":"2021-12-11T23:02:30.00Z","dateModified":"2021-12-11T23:02:30.00Z","publisher":{"@type":"Organization","name":"David Leibovych","url":"https://www.dleibovych.com/","logo":{"@type":"ImageObject","url":"https:\/\/www.dleibovych.com\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/www.dleibovych.com\/posts\/testing-flutter-bloc\/","wordCount":"195","genre":[],"keywords":[]}</script>
 </head>
 <body>
 <header><div class="page-top
@@ -128,21 +127,30 @@ David Leibovych
 .">
 <div class=post-content>
 <div class=post-title>
-<h1>Fix Audio Distortion on Internal Mic on Linux</h1>
-</div><p><em>I am writing this article since I had this issue on pretty much every linux installation.</em>
-<em>This will only work if you&rsquo;re using pulseaudio for sound on Linux.</em></p>
-<p>The general advice I found was editing every <code>analog-input*.conf</code> file in <code>/usr/share/pulseaudio/alsa-mixer/paths/</code>, however only changing <code>analog-input-internal-mic.conf</code> worked for me, since I only experienced the issue with the internal mic.</p>
-<p>In the <code>analog-input-internal-mic.conf</code> change:</p>
-<ul>
-<li>Under [Element Capture] set <code>volume</code> to <code>zero</code></li>
-<li>Under [Element Internal Mic Boost] set <code>volume</code> to <code>zero</code>.</li>
-<li>Under [Element Int Mic Boost] set <code>volume</code> to <code>zero</code>.</li>
-<li>Under [Element Mic Boost] set <code>volume</code> to <code>zero</code>.</li>
-</ul>
-<p>Restart pulseaudio by calling:</p>
-<pre tabindex=0><code>systemctl --user restart pulseaudio
-</code></pre><p>Source: <a href="https://wiki.archlinux.org/title/PulseAudio/Troubleshooting#Microphone_distorted_due_to_automatic_adjustment:%7E:text=Under%20%5BElement%20Internal%20Mic%20Boost%5D%20set,Mic%20Boost%5D%20set%20volume%20to%20zero">https://wiki.archlinux.org/title/PulseAudio/Troubleshooting#Microphone_distorted_due_to_automatic_adjustment:%7E:text=Under%20%5BElement%20Internal%20Mic%20Boost%5D%20set,Mic%20Boost%5D%20set%20volume%20to%20zero</a></p>
-<p>Enjoy your clean Linux microphone experience :)</p>
+<h1>Testing Flutter Bloc</h1>
+</div><p>I try to indroduce tests even to my side projects, just because tests fundamentally save time and make you think more about the project architecture.</p>
+<p>So of course while using the famous <a href=https://pub.dev/packages/flutter_bloc>flutter_bloc</a> library for my projects I wanted a nice way to test it. I was very pleasantly surprised when I discovered that the library provides a very nice and elegant way to test the bloc via <a href=https://pub.dev/packages/bloc_test>bloc_test</a>.</p>
+<p>First of all, add it to your dev dependencies:</p>
+<pre tabindex=0><code>dev_dependencies:
+  bloc_test: ^9.0.1
+</code></pre><p>Then use <code>blocTest</code> instead of <code>test</code>. The function itself has everything that&rsquo;s required for pleasant testing.</p>
+<p>The main ones being:</p>
+<p><code>build</code> - is the builder function to actually provide the BLoC.</p>
+<p><code>act</code> - add events to the bloc.</p>
+<p><code>expect</code> - make sure the bloc emits the right states.</p>
+<p>Other helpful functions are also:</p>
+<p><code>setUp</code> - nice for initializing your data or mocking.</p>
+<p><code>verify</code> - if you want to check not just the states the bloc emits, but also if the flow is right.</p>
+<p>A blocTest would like something like this:</p>
+<pre tabindex=0><code>blocTest&lt;SelectedProficienciesBloc, SelectedProficienciesState&gt;(
+  'initial state when loading data',
+  build: () =&gt; SelectedProficienciesBloc(),
+  act: (bloc) =&gt; bloc.add(LoadSkills()),
+  expect: () =&gt; &lt;SelectedProficienciesState&gt;[
+    LoadedSelectedProficienciesState(),
+  ],
+);
+</code></pre><p>Happy testing!</p>
 </div>
 <div class=post-footer>
 <div class=info>
