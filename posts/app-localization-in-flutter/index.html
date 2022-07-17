@@ -1,159 +1,41 @@
-<!doctype html><html dir=ltr lang=en data-theme><head>
-<title>
-David Leibovych
+<!doctype html><html dir=ltr lang=en data-theme><head><title>David Leibovych
 |
-App Localization in Flutter
-</title>
-<meta charset=utf-8><meta name=generator content="Hugo 0.90.1"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name=description content="
+App Localization in Flutter</title><meta charset=utf-8><meta name=generator content="Hugo 0.101.0"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=description content="
       My name is David
-I'm good at Android
-Love to tinker with things I'm not good at
+I love programming and D&D
 
 
 
-    ">
-<link rel=stylesheet href=/css/main.min.3c2bc692af68f42252aee946792d5f5be31fb55c4e165444d147f7201d8a7323.css integrity="sha256-PCvGkq9o9CJSrulGeS1fW+MftVxOFlRE0Uf3IB2KcyM=" crossorigin=anonymous type=text/css>
-<link rel=stylesheet href=/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4=" crossorigin=anonymous type=text/css>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous>
-<link rel="shortcut icon" href=/favicons/favicon.ico type=image/x-icon>
-<link rel=apple-touch-icon sizes=180x180 href=/favicons/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicons/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicons/favicon-16x16.png>
-<link rel=canonical href=/posts/app-localization-in-flutter/>
-<script type=text/javascript src=/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w=" crossorigin=anonymous></script>
-<script type=text/javascript src=/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus=" crossorigin=anonymous></script>
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="App Localization in Flutter">
-<meta name=twitter:description content="If you are looking for some docs on how to localize your flutter app, the official one is the way to go https://docs.flutter.dev/development/accessibility-and-localization/internationalization. Here I am only noting the steps, so I can recall that for my next app localization attempt with a Flutter app.
+    "><link rel=stylesheet href=/css/main.min.3c2bc692af68f42252aee946792d5f5be31fb55c4e165444d147f7201d8a7323.css integrity="sha256-PCvGkq9o9CJSrulGeS1fW+MftVxOFlRE0Uf3IB2KcyM=" crossorigin=anonymous type=text/css><link rel=stylesheet href=/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4=" crossorigin=anonymous type=text/css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous><link rel="shortcut icon" href=/favicons/favicon.ico type=image/x-icon><link rel=apple-touch-icon sizes=180x180 href=/favicons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicons/favicon-16x16.png><link rel=canonical href=/posts/app-localization-in-flutter/><script type=text/javascript src=/js/anatole-header.min.d0408165d31a17f17bba83038bf54e86121f85021bdf936382e636f0f77a952f.js integrity="sha256-0ECBZdMaF/F7uoMDi/VOhhIfhQIb35NjguY28Pd6lS8=" crossorigin=anonymous></script>
+<script type=text/javascript src=/js/anatole-theme-switcher.min.ea8ebe268922ef9849261a1312cd65b640595e65251ce4c00534a176afd1ac0c.js integrity="sha256-6o6+Joki75hJJhoTEs1ltkBZXmUlHOTABTShdq/RrAw=" crossorigin=anonymous></script><meta name=twitter:card content="summary"><meta name=twitter:title content="App Localization in Flutter"><meta name=twitter:description content="If you are looking for some docs on how to localize your flutter app, the official one is the way to go https://docs.flutter.dev/development/accessibility-and-localization/internationalization. Here I am only noting the steps, so I can recall that for my next app localization attempt with a Flutter app.
 So the steps are as follows:
- Add your flutter localization library in pubspec.yaml:  dependencies: flutter: sdk: flutter flutter_localizations: # Add this line sdk: flutter # Add this line intl: ^0.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"App Localization in Flutter","headline":"App Localization in Flutter","alternativeHeadline":"","description":"
+Add your flutter localization library in pubspec.yaml: dependencies: flutter: sdk: flutter flutter_localizations: # Add this line sdk: flutter # Add this line intl: ^0."><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"App Localization in Flutter","headline":"App Localization in Flutter","alternativeHeadline":"","description":"
       
-        If you are looking for some docs on how to localize your flutter app, the official one is the way to go https:\/\/docs.flutter.dev\/development\/accessibility-and-localization\/internationalization. Here I am only noting the steps, so I can recall that for my next app localization attempt with a Flutter app.\nSo the steps are as follows:\n Add your flutter localization library in pubspec.yaml:  dependencies: flutter: sdk: flutter flutter_localizations: # Add this line sdk: flutter # Add this line intl: ^0.
+        If you are looking for some docs on how to localize your flutter app, the official one is the way to go https:\/\/docs.flutter.dev\/development\/accessibility-and-localization\/internationalization. Here I am only noting the steps, so I can recall that for my next app localization attempt with a Flutter app.\nSo the steps are as follows:\nAdd your flutter localization library in pubspec.yaml: dependencies: flutter: sdk: flutter flutter_localizations: # Add this line sdk: flutter # Add this line intl: ^0.
 
 
       
 
 
-    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.dleibovych.com\/posts\/app-localization-in-flutter\/"},"author":{"@type":"Person","name":"David Leibovych"},"creator":{"@type":"Person","name":"David Leibovych"},"accountablePerson":{"@type":"Person","name":"David Leibovych"},"copyrightHolder":{"@type":"Person","name":"David Leibovych"},"copyrightYear":"2021","dateCreated":"2021-11-28T21:03:20.00Z","datePublished":"2021-11-28T21:03:20.00Z","dateModified":"2021-11-28T21:03:20.00Z","publisher":{"@type":"Organization","name":"David Leibovych","url":"https://www.dleibovych.com/","logo":{"@type":"ImageObject","url":"https:\/\/www.dleibovych.com\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/www.dleibovych.com\/posts\/app-localization-in-flutter\/","wordCount":"208","genre":[],"keywords":[]}</script>
-</head>
-<body>
-<header><div class="page-top
-.">
-<a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false>
+    ","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.dleibovych.com\/posts\/app-localization-in-flutter\/"},"author":{"@type":"Person","name":"David Leibovych"},"creator":{"@type":"Person","name":"David Leibovych"},"accountablePerson":{"@type":"Person","name":"David Leibovych"},"copyrightHolder":{"@type":"Person","name":"David Leibovych"},"copyrightYear":"2021","dateCreated":"2021-11-28T21:03:20.00Z","datePublished":"2021-11-28T21:03:20.00Z","dateModified":"2021-11-28T21:03:20.00Z","publisher":{"@type":"Organization","name":"David Leibovych","url":"https://www.dleibovych.com/","logo":{"@type":"ImageObject","url":"https:\/\/www.dleibovych.com\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":[],"url":"https:\/\/www.dleibovych.com\/posts\/app-localization-in-flutter\/","wordCount":"208","genre":[],"keywords":[]}</script></head><body><header><div class="page-top
+."><a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false><span aria-hidden=true></span>
 <span aria-hidden=true></span>
-<span aria-hidden=true></span>
-<span aria-hidden=true></span>
-</a>
-<nav>
-<ul class=nav__list id=navMenu>
-<div class=nav__links>
-<li>
-<a href=/ title>Home</a>
-</li>
-<li>
-<a href=/posts/ title>Posts</a>
-</li>
-</div>
-<ul>
-<li>
-<a class=theme-switch title="Switch Theme">
-<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
-</a>
-</li>
-</ul>
-</ul>
-</nav>
-</div>
-</header>
-<div class=wrapper>
-<aside><div class="sidebar
-.">
-<div class=sidebar__content>
-<div class=logo-title>
-<div class=title>
-<img src=/images/small_avatar.jpg alt="profile picture">
-<h3 title><a href=/>David Leibovych</a></h3>
-<div class=description>
-<p>My name is David<br>I'm good at Android<br>Love to tinker with things I'm not good at<br></p>
-</div>
-</div>
-</div>
-<ul class=social-links>
-<li>
-<a href=https://github.com/ariedov/ rel=me aria-label=GitHub title=GitHub>
-<i class="fab fa-github fa-2x" aria-hidden=true></i>
-</a>
-</li>
-<li>
-<a href=https://www.twitter.com/ariedov/ rel=me aria-label=twitter title=twitter>
-<i class="fab fa-twitter fa-2x" aria-hidden=true></i>
-</a>
-</li>
-<li>
-<a href=https://www.medium.com/@ariedov/ rel=me aria-label=medium title=medium>
-<i class="fab fa-medium fa-2x" aria-hidden=true></i>
-</a>
-</li>
-<li>
-<a href=https://www.linkedin.com/in/david-leibovych-11587428/ rel=me aria-label=linkedin title=linkedin>
-<i class="fab fa-linkedin fa-2x" aria-hidden=true></i>
-</a>
-</li>
-<li>
-<a href=mailto:ariedov@gmail.com rel=me aria-label=e-mail title=e-mail>
-<i class="fas fa-envelope fa-2x" aria-hidden=true></i>
-</a>
-</li>
-</ul>
-</div><footer class="footer footer--sidebar">
-<div class=by_farbox>
-<ul class=footer__list>
-<li class=footer__item>
-&copy;
+<span aria-hidden=true></span></a><nav><ul class=nav__list id=navMenu><div class=nav__links><li><a href=/ title>Home</a></li><li><a href=/posts/ title>Posts</a></li></div><ul><li><a class=theme-switch title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></li></ul></ul></nav></div></header><div class=wrapper><aside><div class="sidebar
+."><div class=sidebar__content><div class=logo-title><div class=title><img src=/images/small_avatar.jpg alt="profile picture"><h3 title><a href=/>David Leibovych</a></h3><div class=description><p>My name is David<br>I love programming and D&D<br></p></div></div></div><ul class=social-links><li><a href=https://github.com/ariedov/ rel=me aria-label=GitHub title=GitHub><i class="fab fa-github fa-2x" aria-hidden=true></i></a></li><li><a href=https://www.twitter.com/ariedov/ rel=me aria-label=twitter title=twitter><i class="fab fa-twitter fa-2x" aria-hidden=true></i></a></li><li><a href=https://www.medium.com/@ariedov/ rel=me aria-label=medium title=medium><i class="fab fa-medium fa-2x" aria-hidden=true></i></a></li><li><a href=https://www.linkedin.com/in/david-leibovych-11587428/ rel=me aria-label=linkedin title=linkedin><i class="fab fa-linkedin fa-2x" aria-hidden=true></i></a></li><li><a href=mailto:ariedov@gmail.com rel=me aria-label=e-mail title=e-mail><i class="fas fa-envelope fa-2x" aria-hidden=true></i></a></li></ul></div><footer class="footer footer--sidebar"><div class=by_farbox><ul class=footer__list><li class=footer__item>&copy;
 David Leibovych
-2021
-</li>
-</ul>
-</div>
-</footer>
-<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script></div>
-</aside>
-<main>
-<div class=autopagerize_page_element>
-<div class=content>
-<div class="post
-.">
-<div class=post-content>
-<div class=post-title>
-<h1>App Localization in Flutter</h1>
-</div><p>If you are looking for some docs on how to localize your flutter app, the official one is the way to go <a href=https://docs.flutter.dev/development/accessibility-and-localization/internationalization>https://docs.flutter.dev/development/accessibility-and-localization/internationalization</a>. Here I am only noting the steps, so I can recall that for my next app localization attempt with a Flutter app.</p>
-<p>So the steps are as follows:</p>
-<ol>
-<li>Add your flutter localization library in <code>pubspec.yaml</code>:</li>
-</ol>
-<pre tabindex=0><code>dependencies:
+2022</li></ul></div></footer><script type=text/javascript src=/js/medium-zoom.min.51d7548d5d0e5d4ff7991252239ce6abf1fd527a0eabad7ce6b49aa21f6e08da.js integrity="sha256-UddUjV0OXU/3mRJSI5zmq/H9UnoOq6185rSaoh9uCNo=" crossorigin=anonymous></script></div></aside><main><div class=autopagerize_page_element><div class=content><div class="post
+."><div class=post-content><div class=post-title><h1>App Localization in Flutter</h1></div><p>If you are looking for some docs on how to localize your flutter app, the official one is the way to go <a href=https://docs.flutter.dev/development/accessibility-and-localization/internationalization>https://docs.flutter.dev/development/accessibility-and-localization/internationalization</a>. Here I am only noting the steps, so I can recall that for my next app localization attempt with a Flutter app.</p><p>So the steps are as follows:</p><ol><li>Add your flutter localization library in <code>pubspec.yaml</code>:</li></ol><pre tabindex=0><code>dependencies:
   flutter:
     sdk: flutter
   flutter_localizations: # Add this line
     sdk: flutter         # Add this line
   intl: ^0.17.0          # Add this line
-</code></pre><ol start=2>
-<li>Add <code>generate: true</code> flag in <code>pubspec.yaml</code>:</li>
-</ol>
-<pre tabindex=0><code># The following section is specific to Flutter.
+</code></pre><ol start=2><li>Add <code>generate: true</code> flag in <code>pubspec.yaml</code>:</li></ol><pre tabindex=0><code># The following section is specific to Flutter.
 flutter:
   generate: true # Add this line
-</code></pre><ol start=3>
-<li>Import following in your <code>main.dart</code>:</li>
-</ol>
-<pre tabindex=0><code>import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-</code></pre><ol start=4>
-<li>Modify your app as follows:</li>
-</ol>
-<pre tabindex=0><code>return const MaterialApp(
+</code></pre><ol start=3><li>Import following in your <code>main.dart</code>:</li></ol><pre tabindex=0><code>import &#39;package:flutter_localizations/flutter_localizations.dart&#39;;
+import &#39;package:flutter_gen/gen_l10n/app_localizations.dart&#39;;
+</code></pre><ol start=4><li>Modify your app as follows:</li></ol><pre tabindex=0><code>return const MaterialApp(
   title: &lt;Title&gt;,
   localizationsDelegates: [
     AppLocalizations.delegate,
@@ -162,43 +44,15 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
     GlobalCupertinoLocalizations.delegate,
   ],
   supportedLocales: [
-    Locale('en', ''), // English, no country code
-    Locale('ru', ''), // Russian, no country code
+    Locale(&#39;en&#39;, &#39;&#39;), // English, no country code
+    Locale(&#39;ru&#39;, &#39;&#39;), // Russian, no country code
   ],
   home: &lt;Home Page&gt;,
 );
-</code></pre><ol start=5>
-<li>Create an <code>l10n.yaml</code> file in the project root with the contents being:</li>
-</ol>
-<pre tabindex=0><code>arb-dir: lib/l10n
+</code></pre><ol start=5><li>Create an <code>l10n.yaml</code> file in the project root with the contents being:</li></ol><pre tabindex=0><code>arb-dir: lib/l10n
 template-arb-file: app_en.arb
 output-localization-file: app_localizations.dart
-</code></pre><ol start=6>
-<li>Create the folder for internationalizations: <code>&lt;project_root>/lib/l10n</code>, as specified in <code>l10n.yaml</code>.</li>
-<li>Create files for localizations, the template being <code>app_en.arg</code>, as specified in <code>l10n.yaml</code>. I added <code>app_ru.arg</code> specifically.</li>
-<li>Use your localized strings <code>Text(AppLocalizations.of(context)!.helloWorld);</code></li>
-</ol>
-<p>To manually regenerate localized strings from the <code>*.arb</code> files, run</p>
-<pre tabindex=0><code>flutter gen-l10n
-</code></pre></div>
-<div class=post-footer>
-<div class=info>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-</div><footer class="footer footer--base">
-<div class=by_farbox>
-<ul class=footer__list>
-<li class=footer__item>
-&copy;
+</code></pre><ol start=6><li>Create the folder for internationalizations: <code>&lt;project_root>/lib/l10n</code>, as specified in <code>l10n.yaml</code>.</li><li>Create files for localizations, the template being <code>app_en.arg</code>, as specified in <code>l10n.yaml</code>. I added <code>app_ru.arg</code> specifically.</li><li>Use your localized strings <code>Text(AppLocalizations.of(context)!.helloWorld);</code></li></ol><p>To manually regenerate localized strings from the <code>*.arb</code> files, run</p><pre tabindex=0><code>flutter gen-l10n
+</code></pre></div><div class=post-footer><div class=info></div></div></div></div></div></main></div><footer class="footer footer--base"><div class=by_farbox><ul class=footer__list><li class=footer__item>&copy;
 David Leibovych
-2021
-</li>
-</ul>
-</div>
-</footer>
-<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script></body>
-</html>
+2022</li></ul></div></footer><script type=text/javascript src=/js/medium-zoom.min.51d7548d5d0e5d4ff7991252239ce6abf1fd527a0eabad7ce6b49aa21f6e08da.js integrity="sha256-UddUjV0OXU/3mRJSI5zmq/H9UnoOq6185rSaoh9uCNo=" crossorigin=anonymous></script></body></html>
