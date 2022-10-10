@@ -10,6 +10,6 @@ It was also quite old, so a little remake wouldn't hurt. Of course, being a cons
 
 It literally took me a weekend to make the upgrade (if we don't count the problems deploying the actual thing). It would took even less, but I managed to sneak some quality family time into that.
 
-![The actual website](/images/one_day_software/page.png)
+![The actual website](/images/one_day_software_build/page.png)
 
 Now looking for some new ideas for future one-day software builds!
