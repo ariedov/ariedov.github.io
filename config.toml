@@ -39,16 +39,6 @@ title = "twitter"
 url = "https://www.twitter.com/ariedov/"
 
 [[params.socialIcons]]
-icon = "fab fa-medium"
-title = "medium"
-url = "https://www.medium.com/@ariedov/"
-
-[[params.socialIcons]]
 icon = "fab fa-linkedin"
 title = "linkedin"
 url = "https://www.linkedin.com/in/david-leibovych-11587428/"
-
-[[params.socialIcons]]
-icon = "fas fa-envelope"
-title = "e-mail"
-url = "mailto:ariedov@gmail.com"
