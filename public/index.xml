@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David Leibovych</title>
+    <link>https://www.dleibovych.com/</link>
+    <description>Recent content on David Leibovych</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Oct 2022 19:23:51 +0300</lastBuildDate>
+    <atom:link href="https://www.dleibovych.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One Day Software Build</title>
+      <link>https://www.dleibovych.com/posts/one-day-software-build/</link>
+      <pubDate>Mon, 10 Oct 2022 19:23:51 +0300</pubDate>
+      <guid>https://www.dleibovych.com/posts/one-day-software-build/</guid>
+      <description>There is a website I made for some friends - https://www.getmanstudio.com which lives on a digitalocean droplet. The droplet had multiple uses for me in the past, but lately this website was the only thing living there, and I did not really want to pay the $6/mo for it, so the logical thing for me to do was to move the website.&#xA;It was also quite old, so a little remake wouldn&amp;rsquo;t hurt.</description>
+    </item>
+    <item>
+      <title>Best Crossplatform Email App</title>
+      <link>https://www.dleibovych.com/posts/best-crossplatform-email-app/</link>
+      <pubDate>Mon, 13 Dec 2021 11:34:05 +0200</pubDate>
+      <guid>https://www.dleibovych.com/posts/best-crossplatform-email-app/</guid>
+      <description>I have to share this. After long search for a great cross-platform email app I tried&#xA;Thunderbird: works great, not so great outlook support. BlueMail: meh. I finally found the best app, which works great and suits perfectly my needs: Mailspring.&#xA;Happy emailing!</description>
+    </item>
+    <item>
+      <title>Testing Flutter Bloc</title>
+      <link>https://www.dleibovych.com/posts/testing-flutter-bloc/</link>
+      <pubDate>Sat, 11 Dec 2021 23:02:30 +0200</pubDate>
+      <guid>https://www.dleibovych.com/posts/testing-flutter-bloc/</guid>
+      <description>I try to indroduce tests even to my side projects, just because tests fundamentally save time and make you think more about the project architecture.&#xA;So of course while using the famous flutter_bloc library for my projects I wanted a nice way to test it. I was very pleasantly surprised when I discovered that the library provides a very nice and elegant way to test the bloc via bloc_test.&#xA;First of all, add it to your dev dependencies:</description>
+    </item>
+    <item>
+      <title>App Localization in Flutter</title>
+      <link>https://www.dleibovych.com/posts/app-localization-in-flutter/</link>
+      <pubDate>Sun, 28 Nov 2021 21:03:20 +0200</pubDate>
+      <guid>https://www.dleibovych.com/posts/app-localization-in-flutter/</guid>
+      <description>If you are looking for some docs on how to localize your flutter app, the official one is the way to go https://docs.flutter.dev/development/accessibility-and-localization/internationalization. Here I am only noting the steps, so I can recall that for my next app localization attempt with a Flutter app.&#xA;So the steps are as follows:&#xA;Add your flutter localization library in pubspec.yaml: dependencies: flutter: sdk: flutter flutter_localizations: # Add this line sdk: flutter # Add this line intl: ^0.</description>
+    </item>
+    <item>
+      <title>Disable Webcam Audio on Linux</title>
+      <link>https://www.dleibovych.com/posts/disable-webcam-audio-on-linux/</link>
+      <pubDate>Thu, 11 Nov 2021 10:59:01 +0200</pubDate>
+      <guid>https://www.dleibovych.com/posts/disable-webcam-audio-on-linux/</guid>
+      <description>Sometimes I play around with my sound devices, just because I have quite a few connected to my laptop. Sometimes it means I forget to switch them back to where they need to be.&#xA;This particularly works for my webcam audio, which is selected automatically when I change my output to hdmi audio.&#xA;To locate the desired audio device call cat /proc/asound/modules. My output looked like this:&#xA;0 snd_hda_intel 1 snd_hda_intel 2 snd_usb_audio Since I only have one usb audio device installed, and it is my webcam, I want to block snd_usb_audio.</description>
+    </item>
+    <item>
+      <title>Useful Link: No Code Backend</title>
+      <link>https://www.dleibovych.com/posts/useful-link-no-code-backend/</link>
+      <pubDate>Tue, 02 Nov 2021 19:03:15 +0200</pubDate>
+      <guid>https://www.dleibovych.com/posts/useful-link-no-code-backend/</guid>
+      <description>This one contains a bunch of no-code backends. Very useful!&#xA;https://draftbit.com/blog/11-best-no-code-and-low-code-backends-for-2021</description>
+    </item>
+    <item>
+      <title>Adding Gradle Wrapper to an Existing Project</title>
+      <link>https://www.dleibovych.com/posts/adding-gradle-wrapper-to-an-existing-project/</link>
+      <pubDate>Sat, 23 Oct 2021 12:54:14 +0300</pubDate>
+      <guid>https://www.dleibovych.com/posts/adding-gradle-wrapper-to-an-existing-project/</guid>
+      <description>Another little one today, I specifically tried to build the vlc-android app myself to fix a song title issue I have. However, it wasn&amp;rsquo;t building with the error&#xA;Gradle sync failed: Minimum supported Gradle version is 7.0.2. Current version is 6.8. If using the gradle wrapper, try editing the distributionUrl in /home/ariedov/Projects/vlc-android/gradle/wrapper/gradle-wrapper.properties to gradle-7.0.2-all.zip (5 s 953 ms) but there is no gradle/* or gradlew included in the repository. That&amp;rsquo;s not how I usually have my repositories, so I did not have an immediate solution to that problem.</description>
+    </item>
+    <item>
+      <title>Casting Lists and Maps in Dart</title>
+      <link>https://www.dleibovych.com/posts/casting-lists-and-maps-in-dart/</link>
+      <pubDate>Fri, 22 Oct 2021 19:29:40 +0300</pubDate>
+      <guid>https://www.dleibovych.com/posts/casting-lists-and-maps-in-dart/</guid>
+      <description>Another short Dart tip today, and another one that occurred while testing some dart code, but most useful for me when parsing JSON.&#xA;Lists For List&amp;lt;dynamic&amp;gt; I got from a JSON Map, when trying to save them as List&amp;lt;String&amp;gt; the errors like:&#xA;type &amp;#39;List&amp;lt;dynamic&amp;gt;&amp;#39; is not a subtype of type &amp;#39;List&amp;lt;String&amp;gt;&amp;#39; The fix is as simple as using something like that:&#xA;List&amp;lt;String&amp;gt; correctList = &amp;lt;dynamic&amp;gt;[].cast&amp;lt;String&amp;gt;(); Maps And for JSON maps that I needed to be parsed as Map&amp;lt;String, String&amp;gt;:</description>
+    </item>
+    <item>
+      <title>Reading File as String in Dart</title>
+      <link>https://www.dleibovych.com/posts/reading-file-as-string-in-dart/</link>
+      <pubDate>Mon, 18 Oct 2021 17:07:53 +0300</pubDate>
+      <guid>https://www.dleibovych.com/posts/reading-file-as-string-in-dart/</guid>
+      <description>Reading a file in Dart is very straigthforward, so for this article not to be 4 lines long I have to write something down. I, personally, needed this for having a json in Unit tests.&#xA;final file = File(&amp;#34;path/to/file&amp;#34;); final fileContents = await file.readAsString(); Nice reading files in Dart to you =)</description>
+    </item>
+    <item>
+      <title>Fix Audio Distortion on Internal Mic on Linux</title>
+      <link>https://www.dleibovych.com/posts/fix-audio-distortion-on-internal-mic/</link>
+      <pubDate>Sat, 16 Oct 2021 15:41:46 +0300</pubDate>
+      <guid>https://www.dleibovych.com/posts/fix-audio-distortion-on-internal-mic/</guid>
+      <description>I am writing this article since I had this issue on pretty much every linux installation. This will only work if you&amp;rsquo;re using pulseaudio for sound on Linux.&#xA;The general advice I found was editing every analog-input*.conf file in /usr/share/pulseaudio/alsa-mixer/paths/, however only changing analog-input-internal-mic.conf worked for me, since I only experienced the issue with the internal mic.&#xA;In the analog-input-internal-mic.conf change:&#xA;Under [Element Capture] set volume to zero Under [Element Internal Mic Boost] set volume to zero.</description>
+    </item>
+    <item>
+      <title>Xamarin.Android on Linux</title>
+      <link>https://www.dleibovych.com/posts/xamarin-android-on-linux/</link>
+      <pubDate>Fri, 15 Oct 2021 12:50:01 +0300</pubDate>
+      <guid>https://www.dleibovych.com/posts/xamarin-android-on-linux/</guid>
+      <description>The IDE First things first - Jetbrains. Rider is required, there is no other tool available for writing Xamarin code on Linux. Grab it here https://www.jetbrains.com/rider/&#xA;Make sure to install Xamarin.Android support plugin. The installation guide will also have that option available.&#xA;C# on Linux Next is mono - the layer which allows provides necessary tools to build C# code on Linux and Mac. https://www.mono-project.com/&#xA;Now the tricky stuff, installing Xamarin.</description>
+    </item>
+  </channel>
+</rss>
