@@ -8,7 +8,7 @@ draft: false
 
 [GitHub - tursodatabase/libsql: libSQL is a fork of SQLite that is both Open Source, and Open Contributions.](https://github.com/tursodatabase/libsql)
 
-Last week I posted about Turso, a company that provides SQLite as a service. Now I found that they actually open sourced their SQLite fork - libSQL with the MIT license, and it does have some pretty impressive features.
+Last week I learned about Turso, a company that provides SQLite as a service. Now I found that they actually open sourced their SQLite fork - libSQL with the MIT license, and it does have some pretty impressive features.
 - It does have vector support with vector math.
 - It also have a feature called sqld - an sqlite backend that allows to split data between multiple sqlite files for ease of access. Now it doesn’t shard data like we do, but it’s still very impressive.
 
