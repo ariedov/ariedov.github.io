@@ -28,6 +28,12 @@ favicon = "favicons/"
   identifier = "posts"
   url = "/posts/"
 
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
 [[params.socialIcons]]
 icon = "fab fa-github"
 title = "GitHub"
