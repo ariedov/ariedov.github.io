@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>David Leibovych</title><link>https://www.dleibovych.com/</link><description>Recent content on David Leibovych</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 15 Nov 2024 22:24:09 +0200</lastBuildDate><atom:link href="https://www.dleibovych.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Knowledge was collected #1</title><link>https://www.dleibovych.com/posts/knowledge_was_collected_1/</link><pubDate>Fri, 15 Nov 2024 22:24:09 +0200</pubDate><guid>https://www.dleibovych.com/posts/knowledge_was_collected_1/</guid><description>&lt;h4 id="libsql">libSQL&lt;/h4>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>David Leibovych</title><link>https://www.dleibovych.com/</link><description>Recent content on David Leibovych</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 15 Nov 2024 23:30:40 +0200</lastBuildDate><atom:link href="https://www.dleibovych.com/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://www.dleibovych.com/about/</link><pubDate>Fri, 15 Nov 2024 23:30:40 +0200</pubDate><guid>https://www.dleibovych.com/about/</guid><description>&lt;p>Hello! My name is David and I&amp;rsquo;ve been profesionally programming since 2012.&lt;/p>
+&lt;p>Most of my career I was making Android applications for companies like Samsung, Megogo and many more, but I am rapidly expanding my knowledge and not limiting myself to any specific technology stack.&lt;/p>
+&lt;p>I have created multiple successful projects created with many different technologies, like:&lt;/p>
+&lt;ul>
+&lt;li>Android SDK&lt;/li>
+&lt;li>iOS SDK (Swift UI)&lt;/li>
+&lt;li>React&lt;/li>
+&lt;li>NextJS&lt;/li>
+&lt;li>Python (Django, Flask, FastAPI)&lt;/li>
+&lt;li>Golang&lt;/li>
+&lt;li>Lua&lt;/li>
+&lt;li>and many many more&lt;/li>
+&lt;/ul>
+&lt;p>Digging deep is my special mantra, I never stop learning and improving. My GitHub is a project graveyard, but every tombstone is an ode to a learned skill.&lt;/p></description></item><item><title>Knowledge was collected #1</title><link>https://www.dleibovych.com/posts/knowledge_was_collected_1/</link><pubDate>Fri, 15 Nov 2024 22:24:09 +0200</pubDate><guid>https://www.dleibovych.com/posts/knowledge_was_collected_1/</guid><description>&lt;h4 id="libsql">libSQL&lt;/h4>
 &lt;p>&lt;a href="https://github.com/tursodatabase/libsql">GitHub - tursodatabase/libsql: libSQL is a fork of SQLite that is both Open Source, and Open Contributions.&lt;/a>&lt;/p>
 &lt;p>Last week I learned about Turso, a company that provides SQLite as a service. Now I found that they actually open sourced their SQLite fork - libSQL with the MIT license, and it does have some pretty impressive features.&lt;/p>
 &lt;ul>
