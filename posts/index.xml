@@ -1,25 +1,107 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on David Leibovych</title><link>https://www.dleibovych.com/posts/</link><description>Recent content in Posts on David Leibovych</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 20 Feb 2024 13:23:26 +0200</lastBuildDate><atom:link href="https://www.dleibovych.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Full Screen Video in Html</title><link>https://www.dleibovych.com/posts/full-screen-video-html/</link><pubDate>Tue, 20 Feb 2024 09:42:49 +0200</pubDate><guid>https://www.dleibovych.com/posts/full-screen-video-html/</guid><description>I had a task to capture peoples faces for AI biometric recognition for authentication purposes. The &amp;ldquo;hard&amp;rdquo; part supposed to be the face recognition (silly me). There are a bunch of libraries to do that for me, but the video html tag went out of control.
-The tricky part was to make sure that the video is filling up the screen on desktop, but also on mobile.
-When setting width and height to the video tag via js - the video looks weirdly out of place.</description></item><item><title>One Day Software Build</title><link>https://www.dleibovych.com/posts/one-day-software-build/</link><pubDate>Mon, 10 Oct 2022 19:23:51 +0300</pubDate><guid>https://www.dleibovych.com/posts/one-day-software-build/</guid><description>There is a website I made for some friends - https://www.getmanstudio.com which lives on a digitalocean droplet. The droplet had multiple uses for me in the past, but lately this website was the only thing living there, and I did not really want to pay the $6/mo for it, so the logical thing for me to do was to move the website.
-It was also quite old, so a little remake wouldn&amp;rsquo;t hurt.</description></item><item><title>Best Crossplatform Email App</title><link>https://www.dleibovych.com/posts/best-crossplatform-email-app/</link><pubDate>Mon, 13 Dec 2021 11:34:05 +0200</pubDate><guid>https://www.dleibovych.com/posts/best-crossplatform-email-app/</guid><description>I have to share this. After long search for a great cross-platform email app I tried
-Thunderbird: works great, not so great outlook support. BlueMail: meh. I finally found the best app, which works great and suits perfectly my needs: Mailspring.
-Happy emailing!</description></item><item><title>Testing Flutter Bloc</title><link>https://www.dleibovych.com/posts/testing-flutter-bloc/</link><pubDate>Sat, 11 Dec 2021 23:02:30 +0200</pubDate><guid>https://www.dleibovych.com/posts/testing-flutter-bloc/</guid><description>I try to indroduce tests even to my side projects, just because tests fundamentally save time and make you think more about the project architecture.
-So of course while using the famous flutter_bloc library for my projects I wanted a nice way to test it. I was very pleasantly surprised when I discovered that the library provides a very nice and elegant way to test the bloc via bloc_test.
-First of all, add it to your dev dependencies:</description></item><item><title>App Localization in Flutter</title><link>https://www.dleibovych.com/posts/app-localization-in-flutter/</link><pubDate>Sun, 28 Nov 2021 21:03:20 +0200</pubDate><guid>https://www.dleibovych.com/posts/app-localization-in-flutter/</guid><description>If you are looking for some docs on how to localize your flutter app, the official one is the way to go https://docs.flutter.dev/development/accessibility-and-localization/internationalization. Here I am only noting the steps, so I can recall that for my next app localization attempt with a Flutter app.
-So the steps are as follows:
-Add your flutter localization library in pubspec.yaml: dependencies: flutter: sdk: flutter flutter_localizations: # Add this line sdk: flutter # Add this line intl: ^0.</description></item><item><title>Disable Webcam Audio on Linux</title><link>https://www.dleibovych.com/posts/disable-webcam-audio-on-linux/</link><pubDate>Thu, 11 Nov 2021 10:59:01 +0200</pubDate><guid>https://www.dleibovych.com/posts/disable-webcam-audio-on-linux/</guid><description>Sometimes I play around with my sound devices, just because I have quite a few connected to my laptop. Sometimes it means I forget to switch them back to where they need to be.
-This particularly works for my webcam audio, which is selected automatically when I change my output to hdmi audio.
-To locate the desired audio device call cat /proc/asound/modules. My output looked like this:
-0 snd_hda_intel 1 snd_hda_intel 2 snd_usb_audio Since I only have one usb audio device installed, and it is my webcam, I want to block snd_usb_audio.</description></item><item><title>Useful Link: No Code Backend</title><link>https://www.dleibovych.com/posts/useful-link-no-code-backend/</link><pubDate>Tue, 02 Nov 2021 19:03:15 +0200</pubDate><guid>https://www.dleibovych.com/posts/useful-link-no-code-backend/</guid><description>This one contains a bunch of no-code backends. Very useful!
-https://draftbit.com/blog/11-best-no-code-and-low-code-backends-for-2021</description></item><item><title>Adding Gradle Wrapper to an Existing Project</title><link>https://www.dleibovych.com/posts/adding-gradle-wrapper-to-an-existing-project/</link><pubDate>Sat, 23 Oct 2021 12:54:14 +0300</pubDate><guid>https://www.dleibovych.com/posts/adding-gradle-wrapper-to-an-existing-project/</guid><description>Another little one today, I specifically tried to build the vlc-android app myself to fix a song title issue I have. However, it wasn&amp;rsquo;t building with the error
-Gradle sync failed: Minimum supported Gradle version is 7.0.2. Current version is 6.8. If using the gradle wrapper, try editing the distributionUrl in /home/ariedov/Projects/vlc-android/gradle/wrapper/gradle-wrapper.properties to gradle-7.0.2-all.zip (5 s 953 ms) but there is no gradle/* or gradlew included in the repository. That&amp;rsquo;s not how I usually have my repositories, so I did not have an immediate solution to that problem.</description></item><item><title>Casting Lists and Maps in Dart</title><link>https://www.dleibovych.com/posts/casting-lists-and-maps-in-dart/</link><pubDate>Fri, 22 Oct 2021 19:29:40 +0300</pubDate><guid>https://www.dleibovych.com/posts/casting-lists-and-maps-in-dart/</guid><description>Another short Dart tip today, and another one that occurred while testing some dart code, but most useful for me when parsing JSON.
-Lists For List&amp;lt;dynamic&amp;gt; I got from a JSON Map, when trying to save them as List&amp;lt;String&amp;gt; the errors like:
-type &amp;#39;List&amp;lt;dynamic&amp;gt;&amp;#39; is not a subtype of type &amp;#39;List&amp;lt;String&amp;gt;&amp;#39; The fix is as simple as using something like that:
-List&amp;lt;String&amp;gt; correctList = &amp;lt;dynamic&amp;gt;[].cast&amp;lt;String&amp;gt;(); Maps And for JSON maps that I needed to be parsed as Map&amp;lt;String, String&amp;gt;:</description></item><item><title>Reading File as String in Dart</title><link>https://www.dleibovych.com/posts/reading-file-as-string-in-dart/</link><pubDate>Mon, 18 Oct 2021 17:07:53 +0300</pubDate><guid>https://www.dleibovych.com/posts/reading-file-as-string-in-dart/</guid><description>Reading a file in Dart is very straigthforward, so for this article not to be 4 lines long I have to write something down. I, personally, needed this for having a json in Unit tests.
-final file = File(&amp;#34;path/to/file&amp;#34;); final fileContents = await file.readAsString(); Nice reading files in Dart to you =)</description></item><item><title>Fix Audio Distortion on Internal Mic on Linux</title><link>https://www.dleibovych.com/posts/fix-audio-distortion-on-internal-mic/</link><pubDate>Sat, 16 Oct 2021 15:41:46 +0300</pubDate><guid>https://www.dleibovych.com/posts/fix-audio-distortion-on-internal-mic/</guid><description>I am writing this article since I had this issue on pretty much every linux installation. This will only work if you&amp;rsquo;re using pulseaudio for sound on Linux.
-The general advice I found was editing every analog-input*.conf file in /usr/share/pulseaudio/alsa-mixer/paths/, however only changing analog-input-internal-mic.conf worked for me, since I only experienced the issue with the internal mic.
-In the analog-input-internal-mic.conf change:
-Under [Element Capture] set volume to zero Under [Element Internal Mic Boost] set volume to zero.</description></item><item><title>Xamarin.Android on Linux</title><link>https://www.dleibovych.com/posts/xamarin-android-on-linux/</link><pubDate>Fri, 15 Oct 2021 12:50:01 +0300</pubDate><guid>https://www.dleibovych.com/posts/xamarin-android-on-linux/</guid><description>The IDE First things first - Jetbrains. Rider is required, there is no other tool available for writing Xamarin code on Linux. Grab it here https://www.jetbrains.com/rider/
-Make sure to install Xamarin.Android support plugin. The installation guide will also have that option available.
-C# on Linux Next is mono - the layer which allows provides necessary tools to build C# code on Linux and Mac. https://www.mono-project.com/
-Now the tricky stuff, installing Xamarin.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on David Leibovych</title><link>https://www.dleibovych.com/posts/</link><description>Recent content in Posts on David Leibovych</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 15 Nov 2024 22:24:09 +0200</lastBuildDate><atom:link href="https://www.dleibovych.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Knowledge was collected #1</title><link>https://www.dleibovych.com/posts/knowledge_was_collected_1/</link><pubDate>Fri, 15 Nov 2024 22:24:09 +0200</pubDate><guid>https://www.dleibovych.com/posts/knowledge_was_collected_1/</guid><description>&lt;h4 id="libsql">libSQL&lt;/h4>
+&lt;p>&lt;a href="https://github.com/tursodatabase/libsql">GitHub - tursodatabase/libsql: libSQL is a fork of SQLite that is both Open Source, and Open Contributions.&lt;/a>&lt;/p>
+&lt;p>Last week I posted about Turso, a company that provides SQLite as a service. Now I found that they actually open sourced their SQLite fork - libSQL with the MIT license, and it does have some pretty impressive features.&lt;/p>
+&lt;ul>
+&lt;li>It does have vector support with vector math.&lt;/li>
+&lt;li>It also have a feature called sqld - an sqlite backend that allows to split data between multiple sqlite files for ease of access. Now it doesn’t shard data like we do, but it’s still very impressive.&lt;/li>
+&lt;/ul>
+&lt;h4 id="the-only-unbreakable-law">The only unbreakable law&lt;/h4>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=5IUj1EZwpJY">https://www.youtube.com/watch?v=5IUj1EZwpJY&lt;/a>&lt;/p></description></item><item><title>Full Screen Video in Html</title><link>https://www.dleibovych.com/posts/full-screen-video-html/</link><pubDate>Tue, 20 Feb 2024 09:42:49 +0200</pubDate><guid>https://www.dleibovych.com/posts/full-screen-video-html/</guid><description>&lt;p>I had a task to capture peoples faces for AI biometric recognition for authentication purposes. The &amp;ldquo;hard&amp;rdquo; part supposed to be the face recognition (silly me). There are a bunch of libraries to do that for me, but the &lt;code>video&lt;/code> html tag went out of control.&lt;/p>
+&lt;p>The tricky part was to make sure that the video is filling up the screen on desktop, but also on mobile.&lt;/p>
+&lt;p>When setting &lt;code>width&lt;/code> and &lt;code>height&lt;/code> to the &lt;code>video&lt;/code> tag via &lt;code>js&lt;/code> - the video looks weirdly out of place.&lt;/p></description></item><item><title>One Day Software Build</title><link>https://www.dleibovych.com/posts/one-day-software-build/</link><pubDate>Mon, 10 Oct 2022 19:23:51 +0300</pubDate><guid>https://www.dleibovych.com/posts/one-day-software-build/</guid><description>&lt;p>There is a website I made for some friends - &lt;a href="https://www.getmanstudio.com">https://www.getmanstudio.com&lt;/a> which lives on a digitalocean droplet. The droplet had multiple uses for me in the past, but lately this website was the only thing living there, and I did not really want to pay the $6/mo for it, so the logical thing for me to do was to move the website.&lt;/p>
+&lt;p>It was also quite old, so a little remake wouldn&amp;rsquo;t hurt. Of course, being a constant learner I wanted to use something new and shiny to make that happen. Just recently I heard about two new technologies - nextjs for making websites, and tailwindcss for making pretty websites.&lt;/p></description></item><item><title>Best Crossplatform Email App</title><link>https://www.dleibovych.com/posts/best-crossplatform-email-app/</link><pubDate>Mon, 13 Dec 2021 11:34:05 +0200</pubDate><guid>https://www.dleibovych.com/posts/best-crossplatform-email-app/</guid><description>&lt;p>I have to share this. After long search for a great cross-platform email app I tried&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.thunderbird.net/en-US/">Thunderbird&lt;/a>: works great, not so great outlook support.&lt;/li>
+&lt;li>&lt;a href="https://bluemail.me/">BlueMail&lt;/a>: meh.&lt;/li>
+&lt;/ul>
+&lt;p>I finally found the best app, which works great and suits perfectly my needs: &lt;a href="https://getmailspring.com/">Mailspring&lt;/a>.&lt;/p>
+&lt;p>Happy emailing!&lt;/p></description></item><item><title>Testing Flutter Bloc</title><link>https://www.dleibovych.com/posts/testing-flutter-bloc/</link><pubDate>Sat, 11 Dec 2021 23:02:30 +0200</pubDate><guid>https://www.dleibovych.com/posts/testing-flutter-bloc/</guid><description>&lt;p>I try to indroduce tests even to my side projects, just because tests fundamentally save time and make you think more about the project architecture.&lt;/p>
+&lt;p>So of course while using the famous &lt;a href="https://pub.dev/packages/flutter_bloc">flutter_bloc&lt;/a> library for my projects I wanted a nice way to test it. I was very pleasantly surprised when I discovered that the library provides a very nice and elegant way to test the bloc via &lt;a href="https://pub.dev/packages/bloc_test">bloc_test&lt;/a>.&lt;/p>
+&lt;p>First of all, add it to your dev dependencies:&lt;/p></description></item><item><title>App Localization in Flutter</title><link>https://www.dleibovych.com/posts/app-localization-in-flutter/</link><pubDate>Sun, 28 Nov 2021 21:03:20 +0200</pubDate><guid>https://www.dleibovych.com/posts/app-localization-in-flutter/</guid><description>&lt;p>If you are looking for some docs on how to localize your flutter app, the official one is the way to go &lt;a href="https://docs.flutter.dev/development/accessibility-and-localization/internationalization">https://docs.flutter.dev/development/accessibility-and-localization/internationalization&lt;/a>. Here I am only noting the steps, so I can recall that for my next app localization attempt with a Flutter app.&lt;/p>
+&lt;p>So the steps are as follows:&lt;/p>
+&lt;ol>
+&lt;li>Add your flutter localization library in &lt;code>pubspec.yaml&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>dependencies:
+flutter:
+sdk: flutter
+flutter_localizations: # Add this line
+sdk: flutter # Add this line
+intl: ^0.17.0 # Add this line
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>Add &lt;code>generate: true&lt;/code> flag in &lt;code>pubspec.yaml&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code># The following section is specific to Flutter.
+flutter:
+generate: true # Add this line
+&lt;/code>&lt;/pre>&lt;ol start="3">
+&lt;li>Import following in your &lt;code>main.dart&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>import &amp;#39;package:flutter_localizations/flutter_localizations.dart&amp;#39;;
+import &amp;#39;package:flutter_gen/gen_l10n/app_localizations.dart&amp;#39;;
+&lt;/code>&lt;/pre>&lt;ol start="4">
+&lt;li>Modify your app as follows:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>return const MaterialApp(
+title: &amp;lt;Title&amp;gt;,
+localizationsDelegates: [
+AppLocalizations.delegate,
+GlobalMaterialLocalizations.delegate,
+GlobalWidgetsLocalizations.delegate,
+GlobalCupertinoLocalizations.delegate,
+],
+supportedLocales: [
+Locale(&amp;#39;en&amp;#39;, &amp;#39;&amp;#39;), // English, no country code
+Locale(&amp;#39;ru&amp;#39;, &amp;#39;&amp;#39;), // Russian, no country code
+],
+home: &amp;lt;Home Page&amp;gt;,
+);
+&lt;/code>&lt;/pre>&lt;ol start="5">
+&lt;li>Create an &lt;code>l10n.yaml&lt;/code> file in the project root with the contents being:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+&lt;/code>&lt;/pre>&lt;ol start="6">
+&lt;li>Create the folder for internationalizations: &lt;code>&amp;lt;project_root&amp;gt;/lib/l10n&lt;/code>, as specified in &lt;code>l10n.yaml&lt;/code>.&lt;/li>
+&lt;li>Create files for localizations, the template being &lt;code>app_en.arg&lt;/code>, as specified in &lt;code>l10n.yaml&lt;/code>. I added &lt;code>app_ru.arg&lt;/code> specifically.&lt;/li>
+&lt;li>Use your localized strings &lt;code>Text(AppLocalizations.of(context)!.helloWorld);&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>To manually regenerate localized strings from the &lt;code>*.arb&lt;/code> files, run&lt;/p></description></item><item><title>Disable Webcam Audio on Linux</title><link>https://www.dleibovych.com/posts/disable-webcam-audio-on-linux/</link><pubDate>Thu, 11 Nov 2021 10:59:01 +0200</pubDate><guid>https://www.dleibovych.com/posts/disable-webcam-audio-on-linux/</guid><description>&lt;p>Sometimes I play around with my sound devices, just because I have quite a few connected to my laptop. Sometimes it means I forget to switch them back to where they need to be.&lt;/p>
+&lt;p>This particularly works for my webcam audio, which is selected automatically when I change my output to hdmi audio.&lt;/p>
+&lt;p>To locate the desired audio device call &lt;code>cat /proc/asound/modules&lt;/code>. My output looked like this:&lt;/p>
+&lt;pre tabindex="0">&lt;code> 0 snd_hda_intel
+1 snd_hda_intel
+2 snd_usb_audio
+&lt;/code>&lt;/pre>&lt;p>Since I only have one usb audio device installed, and it is my webcam, I want to block &lt;code>snd_usb_audio&lt;/code>. To do that open the &lt;code>/etc/modprobe.d/blacklist.conf&lt;/code> and add the last line to it:&lt;/p></description></item><item><title>Useful Link: No Code Backend</title><link>https://www.dleibovych.com/posts/useful-link-no-code-backend/</link><pubDate>Tue, 02 Nov 2021 19:03:15 +0200</pubDate><guid>https://www.dleibovych.com/posts/useful-link-no-code-backend/</guid><description>&lt;p>This one contains a bunch of no-code backends. Very useful!&lt;/p>
+&lt;p>&lt;a href="https://draftbit.com/blog/11-best-no-code-and-low-code-backends-for-2021">https://draftbit.com/blog/11-best-no-code-and-low-code-backends-for-2021&lt;/a>&lt;/p></description></item><item><title>Adding Gradle Wrapper to an Existing Project</title><link>https://www.dleibovych.com/posts/adding-gradle-wrapper-to-an-existing-project/</link><pubDate>Sat, 23 Oct 2021 12:54:14 +0300</pubDate><guid>https://www.dleibovych.com/posts/adding-gradle-wrapper-to-an-existing-project/</guid><description>&lt;p>Another little one today, I specifically tried to build the vlc-android app myself to fix a song title issue I have.
+However, it wasn&amp;rsquo;t building with the error&lt;/p>
+&lt;pre tabindex="0">&lt;code>Gradle sync failed: Minimum supported Gradle version is 7.0.2. Current version is 6.8. If using the gradle wrapper, try editing the distributionUrl in /home/ariedov/Projects/vlc-android/gradle/wrapper/gradle-wrapper.properties to gradle-7.0.2-all.zip (5 s 953 ms)
+&lt;/code>&lt;/pre>&lt;p>but there is no &lt;code>gradle/*&lt;/code> or &lt;code>gradlew&lt;/code> included in the repository. That&amp;rsquo;s not how I usually have my repositories, so I did not have an immediate solution to that problem.&lt;/p></description></item><item><title>Casting Lists and Maps in Dart</title><link>https://www.dleibovych.com/posts/casting-lists-and-maps-in-dart/</link><pubDate>Fri, 22 Oct 2021 19:29:40 +0300</pubDate><guid>https://www.dleibovych.com/posts/casting-lists-and-maps-in-dart/</guid><description>&lt;p>Another short Dart tip today, and another one that occurred while testing some dart code, but most useful for me when parsing JSON.&lt;/p>
+&lt;h3 id="lists">Lists&lt;/h3>
+&lt;p>For &lt;code>List&amp;lt;dynamic&amp;gt;&lt;/code> I got from a JSON Map, when trying to save them as &lt;code>List&amp;lt;String&amp;gt;&lt;/code> the errors like:&lt;/p>
+&lt;pre tabindex="0">&lt;code>type &amp;#39;List&amp;lt;dynamic&amp;gt;&amp;#39; is not a subtype of type &amp;#39;List&amp;lt;String&amp;gt;&amp;#39;
+&lt;/code>&lt;/pre>&lt;p>The fix is as simple as using something like that:&lt;/p>
+&lt;pre tabindex="0">&lt;code>List&amp;lt;String&amp;gt; correctList = &amp;lt;dynamic&amp;gt;[].cast&amp;lt;String&amp;gt;();
+&lt;/code>&lt;/pre>&lt;h3 id="maps">Maps&lt;/h3>
+&lt;p>And for JSON maps that I needed to be parsed as &lt;code>Map&amp;lt;String, String&amp;gt;&lt;/code>:&lt;/p></description></item><item><title>Reading File as String in Dart</title><link>https://www.dleibovych.com/posts/reading-file-as-string-in-dart/</link><pubDate>Mon, 18 Oct 2021 17:07:53 +0300</pubDate><guid>https://www.dleibovych.com/posts/reading-file-as-string-in-dart/</guid><description>&lt;p>Reading a file in Dart is very straigthforward, so for this article not to be 4 lines long I have to write something down.
+I, personally, needed this for having a json in Unit tests.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-dart" data-lang="dart">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">final&lt;/span> file &lt;span style="color:#f92672">=&lt;/span> File(&lt;span style="color:#e6db74">&amp;#34;path/to/file&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">final&lt;/span> fileContents &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">await&lt;/span> file.readAsString();
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Nice reading files in Dart to you =)&lt;/p></description></item><item><title>Fix Audio Distortion on Internal Mic on Linux</title><link>https://www.dleibovych.com/posts/fix-audio-distortion-on-internal-mic/</link><pubDate>Sat, 16 Oct 2021 15:41:46 +0300</pubDate><guid>https://www.dleibovych.com/posts/fix-audio-distortion-on-internal-mic/</guid><description>&lt;p>&lt;em>I am writing this article since I had this issue on pretty much every linux installation.&lt;/em>
+&lt;em>This will only work if you&amp;rsquo;re using pulseaudio for sound on Linux.&lt;/em>&lt;/p>
+&lt;p>The general advice I found was editing every &lt;code>analog-input*.conf&lt;/code> file in &lt;code>/usr/share/pulseaudio/alsa-mixer/paths/&lt;/code>, however only changing &lt;code>analog-input-internal-mic.conf&lt;/code> worked for me, since I only experienced the issue with the internal mic.&lt;/p>
+&lt;p>In the &lt;code>analog-input-internal-mic.conf&lt;/code> change:&lt;/p>
+&lt;ul>
+&lt;li>Under [Element Capture] set &lt;code>volume&lt;/code> to &lt;code>zero&lt;/code>&lt;/li>
+&lt;li>Under [Element Internal Mic Boost] set &lt;code>volume&lt;/code> to &lt;code>zero&lt;/code>.&lt;/li>
+&lt;li>Under [Element Int Mic Boost] set &lt;code>volume&lt;/code> to &lt;code>zero&lt;/code>.&lt;/li>
+&lt;li>Under [Element Mic Boost] set &lt;code>volume&lt;/code> to &lt;code>zero&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;p>Restart pulseaudio by calling:&lt;/p></description></item><item><title>Xamarin.Android on Linux</title><link>https://www.dleibovych.com/posts/xamarin-android-on-linux/</link><pubDate>Fri, 15 Oct 2021 12:50:01 +0300</pubDate><guid>https://www.dleibovych.com/posts/xamarin-android-on-linux/</guid><description>&lt;h3 id="the-ide">The IDE&lt;/h3>
+&lt;p>First things first - Jetbrains. Rider is required, there is no other tool available for writing Xamarin code on Linux. Grab it here &lt;a href="https://www.jetbrains.com/rider/">https://www.jetbrains.com/rider/&lt;/a>&lt;/p>
+&lt;p>Make sure to install &lt;code>Xamarin.Android&lt;/code> support plugin. The installation guide will also have that option available.&lt;/p>
+&lt;h3 id="c-on-linux">C# on Linux&lt;/h3>
+&lt;p>Next is mono - the layer which allows provides necessary tools to build C# code on Linux and Mac.
+&lt;a href="https://www.mono-project.com/">https://www.mono-project.com/&lt;/a>&lt;/p>
+&lt;p>Now the tricky stuff, installing Xamarin.Android. There is no fancy website with installation guides, just an appcenter project with build artifacts. It was Jenkins before that.  &lt;a href="https://dev.azure.com/xamarin/public/_build/results?buildid=43659&amp;amp;view=artifacts&amp;amp;pathAsName=false&amp;amp;type=publishedArtifacts">https://dev.azure.com/xamarin/public/_build/results?buildid=43659&amp;amp;view=artifacts&amp;amp;pathAsName=false&amp;amp;type=publishedArtifacts&lt;/a>&lt;/p></description></item></channel></rss>
