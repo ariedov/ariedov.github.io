@@ -30,7 +30,7 @@ favicon = "favicons/"
 
   [[menu.main]]
   name = "About"
-  weight = 300
+  weight = 400
   identifier = "about"
   url = "/about/"
 
