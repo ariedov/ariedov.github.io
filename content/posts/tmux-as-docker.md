@@ -4,17 +4,17 @@ date: 2025-03-08T21:29:03Z
 draft: false
 ---
 
-I highly recommend using a vps with a custom domain name and https configuration for testing ones backend. 127.0.0.1 is fine for start, and there not a way of avoiding it, however, having an actual server is bound to uncover some obvious issues that were missed in development.
+I highly recommend using a vps with a custom domain name and https configuration for testing ones backend. 127.0.0.1 is fine for start, and there is not a way of avoiding it, however, having an actual server is bound to uncover some obvious issues that were missed in development.
 
 But there is an issue at hand: how to keep the backend code running after the ssh connection is lost? There are a few options.
 
 ### Docker
 
-This one is the most obvious: containerize the code, run it in docker, expose a port and voila - you're all set. And while there are waysnto keep the docker container up to date with all the code changes, it's not the most smooth experience.
+This one is the most obvious: containerize the code, run it in docker, expose a port and voila - you're all set. And while there are ways to keep the docker container up to date with all the code changes, it's not the most smooth experience.
 
 ### Daemon
 
-A daemon is basically a worst docker: it is harder tontrack, harder to make sure the code is up to date and harder to kill.
+A daemon is basically a worst docker: it is harder to track, harder to make sure the code is up to date and harder to kill.
 
 
 ### tmux
